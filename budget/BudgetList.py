@@ -20,7 +20,14 @@ class BudgetList:
 
     def __len__(self):
         x = len(self.expenses) + len(self.overages)
-        print(x)
+        
+
+    def __iter__(self):
+        iter(self.expenses) == self.iter_e
+        iter(self.overages) == self.iter_o
+        return self
+
+    
         
 
 def main():
